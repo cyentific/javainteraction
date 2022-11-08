@@ -70,20 +70,21 @@ body {
 
 }
 
-.outputContainer {
+#outputContainer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-self: center;
   gap: 2vh;
+  padding-top: 220px;
+  height: 40ppx;
+  width: auto;
 }
 
 #drinkoutput{
   font-size: 40px;
   justify-content: center;
   align-self: center;
-  padding-top: 220px;
-  height: 40ppx;
-  width: auto;
+  color: black;
 }

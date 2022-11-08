@@ -1,51 +1,36 @@
+import java.lang.Math;
+
 var input = document.getElementById("input");
-
 var buttonz = document.getElementById("buttonz");
-var outputcontainer = document.getElementById("outputcontainer");
+var outputcontainer = document.getElementById("outputContainer");
 var drinkoutput = document.getElementById("drinkoutput");
+var drinks = [];
+var resultdrink = "";
+var year = document.getElementById("input").value
 
-var previouslyEntered = "";
-
-buttonz.addEventListener("Enter", function () {
+buttonz.addEventListener("Enter", function() {
   drinkchoicegenerator();
 });
 
+function drinkchoicegenerator(year){
 
-function drinkchoicegenerator(inputText){
-  var year = document.getElementById("input").value;
-
-  if (previouslyEntered == year) {
-    return;
-  }
-
-  var drinks = [];
-  var resultdrink = "";
-
-  if (year =< 2002.1) {
+if (year <= 2004.1) {
     drinks = ["Pina Colada", "Blody Mary"];
-    resultdrink = drinks[Math.floor(Math.random() * drinks.length)];
+    resultdrink = drinks[2* Math.floor(Math.random())];
 
-  } else if (year =< 2004.1) {
+
+} else if (year <= 2002.1) {
     drinks = ["Espresso Martini", "Spicy Margarita"];
-    resultdrink = drinks[Math.floor(Math.random() * drinks.length)];
+    resultdrink = drinks[2* Math.floor(Math.random())];
 
-  } else if (year =< 1996.1) {
+
+} else if (year <= 1999.1) {
     drinks = ["Moscow Mule", "Whiskey on the rocks",];
-    resultdrink = drinks[Math.floor(Math.random() * drinks.length)];
+    resultdrink = drinks[ 2* Math.floor(Math.random())];
 
-  } else if (year =< 1999.1) {
+
+} else if (year <= 1996.1) {
     drinks = [ "Scotch", "Dirty Martini"];
-    resultdrink = drinks];
-
-  }else {
-    drinkoutput = resultdrink;
-  }
-
-  if (inputText == ""){
-
-
-  previouslyEntered = inputText;
-
-}
+    resultdrink = drinks[ 2* Math.floor(Math.random())];
 
 };
