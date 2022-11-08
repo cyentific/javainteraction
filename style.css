@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Days+One&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Days One', sans-serif;
+  background-color: #FFD700
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: -10px;
+
+
+}
+
+#titleheading {
+  font-size: 80px;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  width: 400px;
+
+}
+
+#instructions {
+  font-size: 40px;
+  text-align: center ;
+  justify-content: center;
+  align-self: center;
+}
+
+#input {
+  font-size: 40px;
+  justify-content: center;
+  align-self: center;
+  padding-top: 220px;
+  height: 40ppx;
+  width: auto;
+  text-rendering: auto;
+}
+
+#buttonz {
+  font-size: 40px;
+  justify-content: center;
+  align-self: center;
+  height: 10vh;
+  width: 20vh;
+  color: #AA6C39;
+
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  gap: 2vh;
+
+}
+
+.outputContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  gap: 2vh;
+}
+
+#drinkoutput{
+  font-size: 40px;
+  justify-content: center;
+  align-self: center;
+  padding-top: 220px;
+  height: 40ppx;
+  width: auto;
+}
