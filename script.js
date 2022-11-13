@@ -1,5 +1,3 @@
-import java.lang.Math;
-
 var input = document.getElementById("input");
 var buttonz = document.getElementById("buttonz");
 var outputcontainer = document.getElementById("outputContainer");
